@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To DO List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="app">
+      <div class="header">
+        <h1>TO DO LIST</h1>
+
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <div class="menu__box">
+            <li class="li"><a class="menu__item" href="www.google.com">daily</a></li>
+            <li class="li"><a class="menu__item" href="www.google.com">weekly</a></li>
+            <li class="li"><a class="menu__item" href="www.google.com">favorite</a></li>
+            <li class="li"><a class="menu__item" href="www.google.com">new input</a></li>
+            <li class="li"><a class="menu__item" href="www.google.com">confirm</a></li>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="input">
+        <form id="form">
+          <div id="input"> <input type="text" placeholder="Add new task..."></div>
+          <div id="button"> <button type="submit">&plus;</button> </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="output">
+      <ul> </ul>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="./js.js"></script>
+</body>
+
+</html>

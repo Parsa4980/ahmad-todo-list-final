@@ -1,0 +1,258 @@
+
+    @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+
+    * {
+      margin: 0 ; 
+      padding : 0 ; 
+    }
+    body{
+      overflow-x: hidden;
+    }
+
+    .container {
+      display: block;
+        position: relative;
+      align-items: center;
+      background-color: #e1e3ea;
+      width: 99vw;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .app {
+        position: absolute;
+      width: 100%;
+      height: 20%;
+      background-color: #84beb3;
+    }
+    .output {
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        top: 20%;
+        background-color:white;
+        overflow-y: scroll;
+    }
+    .header{
+        position: absolute;
+        height: 65%;
+        width: 100%;
+        top: 0;
+    }
+    .input{
+        position: absolute;
+        height: 35%;
+        width: 100%;
+        top: 65%;
+    }
+    .app .header h1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #button{
+        position: absolute;
+        height: 100%;
+        width: 10%;
+        right: 0;
+    }
+    #button button{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-left: 1.5px solid black;
+        background-color: #5fe9bb;
+    }
+    #button button:hover{
+        background-color: #c519d4;
+    }
+    #input {
+        position: absolute;
+        height: 100%;
+        width: 90%;
+        left: 0;
+        text-align: center;
+    }
+    #input input{
+        border-style: none;
+        text-align: center;
+      background-color: #74bfe2;
+        width: 100%;
+        height:100%;
+        font-size: 18px;
+    }
+    
+    .app h1 {
+      color: white;
+      font-size: 40px;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: .5rem .5rem 0 0;
+      background-color: #4936f7;
+      font-family: "Rajdhani", sans-serif;
+    }
+
+    
+
+    .app form button {
+      border: none;
+      color: white;
+      background-color: #1dd2af;
+      font-size: 25px;
+      font-weight: 600;
+      height: 42px;
+      width: 10%;
+    }
+
+    /* hamburger menu code  */
+
+
+ 
+.hamburger-menu{
+  position: relative;
+  left: 0px;
+  height: 46px;
+  width: 60%;
+  left: 0px;
+
+}
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  top: 10px;
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 3;
+}
+.menu__btn > span,.menu__btn > span::before, .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #0caaf3;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: 10px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 20px;
+}
+.menu__box {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 24vw;
+  height: 80vh;
+  margin: 0;
+  padding: 20vh 0 0 0;
+  list-style: none;
+  background-color: #aed7f3;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  z-index: 2;
+}
+
+.li{
+  width: 100%;
+
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  text-align: center;
+  width: 20.5vw;
+  color: rgb(224, 73, 149);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+font-size: 35px;
+}
+
+
+/* until here is hamburger menu  */
+
+.output ul li {
+  display: block;
+  position: relative;
+  height: 35px;
+  border-bottom: 0.5px solid black;
+}
+
+   
+
+    .check {
+     
+      cursor: pointer;
+      margin-top: 8px;
+      margin-left: 20px;
+      background-color: white;
+      border: 1px solid rgb(255, 255, 255);
+
+    }
+
+
+    .task {
+      font-size: 18px;
+      padding: 0 10px;
+      left: 4%;
+      width: 80%;
+      padding-top: 8px;
+      background: transparent;
+      border: none;
+      color: rgb(30, 34, 30);
+      overflow:-moz-hidden-unscrollable
+    }
+   .output ul li div{
+      display: inline-block;
+      width: 12%;
+      border-style: none;
+    }
+    .task:focus {
+      outline:#4936f7
+    }
+
+    .output ul li i {
+      position: absolute;
+      right: 2%;
+      padding-top: 8px;
+      float: right;
+      cursor: pointer;
+    }
+
+    .output ul li i:hover {
+      color: rgb(255, 82, 177);
+    }
+
+    .completed {
+      color: rgb(61, 192, 9);
+      text-decoration: line-through;
+      
+    }
